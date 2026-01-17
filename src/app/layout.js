@@ -27,3 +27,19 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+// tailwind.config.js
+module.exports = {
+  content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        red: {
+          500: "#ff2b2b",
+          600: "#e62222",
+        },
+      },
+    },
+  },
+};
+
+
